@@ -32,12 +32,34 @@ function my_keydown(e)
 		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
 		//write a code to check the type of key pressed
 		alphabetkey();
-		document.getElementById("d1").innerHTML= "you pressed alphabet key";
+		document.getElementById("d1").innerHTML= "You pressed alphabet key";
 		console.log("alphabet key");}
-	    else{
-		otherkey();
-		document.getElementById("d1").innerHTML="You pressed symbol or other key";
-	    }
+	       else if(keyPressed >=48 && keyPressed <=57)
+	       {
+		numberkey()
+		document.getElementById("d1").innerHTML="You pressed Number key";
+	       }
+	
+	       else if(keyPressed >=37 && keyPressed <=40)
+	       {
+		arrowkey()
+		document.getElementById("d1").innerHTML="You pressed an Arrow key";
+	       }
+	
+	       else if(keyPressed ==17 && keyPressed ==18 && keyPressed ==27)
+	       {
+		specialkey()
+		document.getElementById("d1").innerHTML="You pressed a Special key";
+	       }
+	       else if(keyPressed == symbols,etc)
+	       {
+		otherkey()
+		document.getElementById("d1").innerHTML="You pressed an Other key";
+	       }
+	     
+	     
+	     
+	     
 	}
 	
 
