@@ -39,13 +39,11 @@ function my_keydown(e)
 		numberkey()
 		document.getElementById("d1").innerHTML="You pressed Number key";
 	       }
-	
 	       else if(keyPressed >=37 && keyPressed <=40)
 	       {
 		arrowkey()
 		document.getElementById("d1").innerHTML="You pressed an Arrow key";
 	       }
-	
 	       else if(keyPressed ==17 && keyPressed ==18 && keyPressed ==27)
 	       {
 		specialkey()
@@ -56,10 +54,7 @@ function my_keydown(e)
 		otherkey()
 		document.getElementById("d1").innerHTML="You pressed an Other key";
 	       }
-	     
-	     
-	     
-	     
+	  
 	}
 	
 
